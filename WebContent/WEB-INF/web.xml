@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+
+	<servlet>
+		<servlet-name>SimpleServlet</servlet-name>
+		<servlet-class>com.uld5skull.demo.jee.servlets.SimpleServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ServletWithView</servlet-name>
+		<servlet-class>com.uld5skull.demo.jee.servlets.ServletWithView</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ServletWithAttribute</servlet-name>
+		<servlet-class>com.uld5skull.demo.jee.servlets.ServletWithAttribute</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ServletWithParameter</servlet-name>
+		<servlet-class>com.uld5skull.demo.jee.servlets.ServletWithParameter</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ServletWithBean</servlet-name>
+		<servlet-class>com.uld5skull.demo.jee.servlets.ServletWithBean</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>SimpleServlet</servlet-name>
+		<url-pattern>/simple</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ServletWithView</servlet-name>
+		<url-pattern>/view</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ServletWithAttribute</servlet-name>
+		<url-pattern>/attribute_1</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ServletWithParameter</servlet-name>
+		<url-pattern>/parameter_1</url-pattern>
+	</servlet-mapping>
+	
+		<servlet-mapping>
+		<servlet-name>ServletWithBean</servlet-name>
+		<url-pattern>/bean_1</url-pattern>
+	</servlet-mapping>
+
+</web-app>
