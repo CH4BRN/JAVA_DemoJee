@@ -20,5 +20,10 @@
 	out.println("<br/>");
 	%>
 	</p>
+	
+	<% out.println("bip bip 1"); %>
+	<%= "Bip bip j'ai dit " %>
+	
+	
 </body>
 </html>

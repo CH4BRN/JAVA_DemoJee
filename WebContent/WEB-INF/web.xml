@@ -24,6 +24,16 @@
 		<servlet-class>com.uld5skull.demo.jee.servlets.ServletWithBean</servlet-class>
 	</servlet>
 
+	<servlet>
+		<servlet-name>ServletWithScriptlet</servlet-name>
+		<servlet-class>com.uld5skull.demo.jee.servlets.ServletWithScriptlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ServletWithImports</servlet-name>
+		<servlet-class>com.uld5skull.demo.jee.servlets.ServletWithImports</servlet-class>
+	</servlet>
+
 
 	<servlet-mapping>
 		<servlet-name>SimpleServlet</servlet-name>
@@ -44,10 +54,21 @@
 		<servlet-name>ServletWithParameter</servlet-name>
 		<url-pattern>/parameter_1</url-pattern>
 	</servlet-mapping>
-	
-		<servlet-mapping>
+
+	<servlet-mapping>
 		<servlet-name>ServletWithBean</servlet-name>
 		<url-pattern>/bean_1</url-pattern>
 	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ServletWithScriptlet</servlet-name>
+		<url-pattern>/scriptlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ServletWithImports</servlet-name>
+		<url-pattern>/imports</url-pattern>
+	</servlet-mapping>
+
 
 </web-app>
